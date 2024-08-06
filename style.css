@@ -108,11 +108,47 @@ button {
     background-color: #053B50;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
+    font-family: 'Playfair Display'
 }
 
 button:hover {
+    background-color: #053B60;
+}
+button-img {
+    padding: 10px;
+    background-color: #053B50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Playfair Display'
+}
+
+--button--
+.place__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: .75rem 1rem;
+  }
+  .button--flex {
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+  }
+  .button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    font-weight: var(--font-semi-bold);
+    transition: .3s;
+  }
+  --button--
+
+button-img:hover {
     background-color: #053B60;
 }
 .contact a {
@@ -127,3 +163,24 @@ button:hover {
     border-top: 1px dotted #053B50;
   padding-top: 10px;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .social-icons i {
+    font-size: 24px; /* or any other size you prefer */
+    color: #053B50;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    opacity: 0.8;
+  }
